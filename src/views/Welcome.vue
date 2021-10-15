@@ -1,12 +1,10 @@
 <template>
-<v-card>
-  Main
-</v-card>
+  Welcome
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Welcome"
 }
 </script>
 

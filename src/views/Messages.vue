@@ -1,12 +1,12 @@
 <template>
 <v-card>
-  Main
+  Messages
 </v-card>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Messages"
 }
 </script>
 
