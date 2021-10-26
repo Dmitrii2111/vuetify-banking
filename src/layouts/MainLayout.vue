@@ -1,5 +1,5 @@
 <template>
-<v-main>
+<v-main class="d-flex fill-height grey lighten-3 align-content-center justify-center">
   <app-main-navbar></app-main-navbar>
   <v-alert
       dismissible

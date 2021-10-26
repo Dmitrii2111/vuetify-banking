@@ -10,7 +10,7 @@
       <v-tab exact-path to="/">Главная</v-tab>
       <v-tab to="/help">Помощь</v-tab>
       <v-tab to="/messages">Сообщения</v-tab>
-      <v-tab to="/login" @click="logout">Выйти</v-tab>
+      <v-tab @click="logout">Выйти</v-tab>
     </v-tabs>
 
   </v-app-bar>
@@ -21,8 +21,11 @@ export default {
   name: "AppNavbar",
   methods: {
     logout() {
-      this.$store.commit('auth/logout')
-    }
+      console.log('logout')
+      localStorage.removeItem('jwt-token')
+      this.$router.push('/login')
+      // this.$store.commit('auth/logout')
+    },
   }
 }
 </script>

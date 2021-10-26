@@ -33,6 +33,15 @@ const routes = [
     }
   },
   {
+    path: '/logout',
+    name: 'Logout',
+    component: () => import('../views/Logout'),
+    meta: {
+      layout: 'main',
+      auth: true
+    }
+  },
+  {
     path: '/help',
     name: 'Help',
     component: () => import('../views/Help'),

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="d-flex fill-height grey lighten-3 align-content-center justify-center">
       <auth-nav-bar></auth-nav-bar>
       <v-alert
           dismissible
